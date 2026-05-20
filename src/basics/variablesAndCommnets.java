@@ -1,8 +1,8 @@
-package Variables;
+package basics;
 
 public class variablesAndCommnets {
     static void main() {
-        System.out.println("Variables");
+        System.out.println("basics");
 
         // Commnets
         /*Hello*/

@@ -1,4 +1,4 @@
-package Variables;
+package basics;
 
 public class operators {
     static void main() {
