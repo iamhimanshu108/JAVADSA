@@ -37,7 +37,21 @@ public class loop {
 //        System.out.println(sum);
 
 
+//  Sum of Even & Odd Seprately
 
+        // Prime Or Not
+//        class Solution{
+//            public boolean isPrime(int n) {
+//                /*Write your code here*/
+//
+//                if(n<=1) return "Not Prime";
+//                for(int i =2; i*i <=n; i++){
+//                    if(n%i ==0) return "Not Prime";
+//                }
+//
+//                return "Prime";
+//            }
+//        }
 
     }
 }
