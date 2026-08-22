@@ -101,41 +101,77 @@ public class L27arrayproblems {
 
 
 
-    // Postive and Negative Sum
+    // // Postive and Negative Sum
 
-        static int[] posNegSum(int[] arr){
-            int posSum = 0;
-            int negSum = 0;
+    //     static int[] posNegSum(int[] arr){
+    //         int posSum = 0;
+    //         int negSum = 0;
 
-            for(int i = 0; i <arr.length; i++){
-                if(arr[i] >0){
-                    posSum = posSum + arr[i];
-                }
-                else {
-                    negSum = negSum + arr[i];
-                }
+    //         for(int i = 0; i <arr.length; i++){
+    //             if(arr[i] >0){
+    //                 posSum = posSum + arr[i];
+    //             }
+    //             else {
+    //                 negSum = negSum + arr[i];
+    //             }
 
+    //         }
+    //         int ans[] = {posSum, negSum};
+    //         return ans;
+
+    //     }
+
+    //     public static void main(String[] args) {
+    //         int arr[] = {1,2,3,4,5,6,-2,4,6};
+    //         int ans[] = posNegSum(arr);
+    //         System.out.println("Postive sum" + ans[0]);
+    //         System.out.println("Negative sum " + ans[1]);
+    //     }
+
+
+
+
+
+
+
+    // static int[] getZeroOneCount(int arr[]){
+    //     int zeroCount =0;
+    //     int oneCount = 0;
+
+    //     for (int i = 0; i<arr.length; i++){
+    //         if(arr[i] == 0){
+    //             zeroCount++;
+    //         }
+    //         else{
+    //             oneCount++;
+    //         }
+    //     }
+    //     int ans[] = {zeroCount, oneCount};
+    //     return ans;
+    // }
+    // public static void main(String[] args) {
+    //     int arr[] = {1,0,1,0,0,1,1};
+    //     int ans[] = getZeroOneCount(arr);
+    //     System.out.println(ans[0]);
+    //     System.out.println(ans[1]);
+
+    // }
+
+    static int getUnsortedElement(int[] arr){
+        for(int  i = 0; i <arr.length; i++){
+            if(arr[i+1] <= arr[i]){
+                return arr[i+1];
             }
-            int ans[] = {posSum, negSum};
-            return ans;
-
+            
         }
+        return -1;
+    }
 
-        public static void main(String[] args) {
-            int arr[] = {1,2,3,4,5,6,-2,4,6};
-            int ans[] = posNegSum(arr);
-            System.out.println("Postive sum" + ans[0]);
-            System.out.println("Negative sum " + ans[1]);
-        }
+    public static void main(String[] args) {
+        int arr[] = {1,2,3,4,5,7,6};
+        System.out.println(getUnsortedElement(arr));
 
-
-
-
-
-
-
-
-
+    }
 
 
 
