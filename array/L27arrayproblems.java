@@ -1,4 +1,4 @@
-package array;
+
 
 public class L27arrayproblems {
     // static double getAverage(int[] arr){
